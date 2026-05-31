@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="新宿駅徒歩3分の隠れ家ヘアサロン『LUSTER Shinjuku（ラスター新宿）』公式サイト。骨格診断カットと髪質改善ヘアケアを専門とし、光と緑に包まれたプライベート空間で極上の施術を提供いたします。">
+    <meta name="robots" content="index, follow">
+    <title>LUSTER Shinjuku | 新宿の骨格診断カット・髪質改善プライベートヘアサロン</title>
+
+    <!-- Google Fonts: Playfair Display for numbers/headings, Noto Serif JP for elegant Japanese, and Noto Sans JP / Inter for clean body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ===== OGP / Twitter Card ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LUSTER Shinjuku | 新宿の骨格診断カット・髪質改善プライベートサロン">
+    <meta property="og:description" content="新宿駅東口徒歩3分。観葉植物と木が調和した温かみのある空間で、骨格診断カットと髪質改善プログラムによるパーソナルケアをご提供。">
+    <meta property="og:image" content="https://jizhaoganye-dev.github.io/luster-shinjuku/assets/images/ogp.jpg">
+    <meta property="og:url" content="https://jizhaoganye-dev.github.io/luster-shinjuku/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- ===== GEO: LocalBusiness JSON-LD ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "@id": "https://jizhaoganye-dev.github.io/luster-shinjuku/#salon",
+      "name": "LUSTER Shinjuku（ラスター新宿）",
+      "image": [
+        "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1080"
+      ],
+      "description": "新宿駅徒歩3分の場所にある隠れ家プライベートサロン。骨格診断に基づいた似合わせカットと、特許取得の髪質改善トリートメントを提供。観葉植物溢れるリラックス空間。",
+      "url": "https://jizhaoganye-dev.github.io/luster-shinjuku/",
+      "telephone": "+81-3-1234-5678",
+      "priceRange": "￥7,500 - ￥20,000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "新宿3-1-1 新宿ビル 5F",
+        "addressLocality": "新宿区",
+        "addressRegion": "東京都",
+        "postalCode": "160-0022",
+        "addressCountry": "JP"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.6909,
+        "longitude": 139.7013
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Wednesday","Thursday","Friday"],
+          "opens": "10:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday","Sunday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ],
+      "menu": "https://jizhaoganye-dev.github.io/luster-shinjuku/#menu",
+      "acceptsReservations": "True"
+    }
+    </script>
+
+    <!-- ===== GA4 Measurement Stub ===== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LUSTER-DEMO"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LUSTER-DEMO', {
+        'page_title': 'LUSTER Shinjuku Premium Website',
+        'send_page_view': true
+      });
+    </script>
+
+    <!-- ===== Meta Pixel Stub ===== -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'LUSTER_PIXEL_DEMO');
+      fbq('track', 'PageView');
+    </script>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">LUSTER Shinjuku</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#concept" class="nav-link">Concept</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#staff" class="nav-link">Staff</a></li>
+                    <li><a href="#shop" class="nav-link">Shop</a></li>
+                    <li><a href="#access" class="nav-link">Access</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#access" class="btn btn-primary btn-sm header-cta">WEB予約 (Book Now)</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="#concept" class="mobile-nav-link">Concept</a></li>
+            <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+            <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+            <li><a href="#staff" class="mobile-nav-link">Staff</a></li>
+            <li><a href="#shop" class="mobile-nav-link">Shop</a></li>
+            <li><a href="#access" class="mobile-nav-link">Access</a></li>
+            <li><a href="#access" class="mobile-nav-link btn btn-primary">WEB予約 (Book Now)</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: linear-gradient(135deg, rgba(168, 184, 159, 0.25) 0%, rgba(245, 241, 232, 0.85) 100%), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1600');">
+            <div class="container hero-container">
+                <div class="hero-content fade-in">
+                    <span class="badge">SHINJUKU RETREAT</span>
+                    <h1 class="hero-title">
+                        なりたい私に出会う、<br>
+                        光と緑のプライベートサロン
+                    </h1>
+                    <p class="hero-description">
+                        LUSTER Shinjukuは、植物と木漏れ日に包まれた新宿の隠れ家ヘアサロンです。丁寧な骨格診断カットと髪質改善プログラムで、あなた本来の輝きを引き出すパーソナル施術を提供します。
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">メニューを見る</a>
+                        <a href="#access" class="btn btn-outline">WEB予約</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Concept Section -->
+        <section id="concept" class="section concept-section">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-subtitle">OUR CONCEPT</span>
+                    <h2 class="section-title">私たちのこだわり</h2>
+                </div>
+                <div class="grid grid-2 max-w-6xl mx-auto gap-12">
+                    <!-- Concept 1 -->
+                    <div class="concept-card fade-in">
+                        <div class="image-mask">
+                            <img src="https://images.unsplash.com/photo-1595959183075-c1d409553abe?auto=format&fit=crop&q=80&w=800" alt="骨格診断カットの様子" class="concept-img">
+                        </div>
+                        <div class="concept-info text-center">
+                            <div class="concept-icon-wrapper">
+                                <svg class="concept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <h3 class="concept-card-title">骨格診断カット</h3>
+                            <span class="concept-card-subtitle">Skeleton Diagnosis Cut</span>
+                            <p class="concept-card-text">
+                                お客様一人ひとりの骨格・頭の形・顔立ちをミリ単位で丁寧に分析し、最も小顔に見える「似合わせスタイル」をご提案。伸びてきても崩れにくい立体的な美しさを実現します。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Concept 2 -->
+                    <div class="concept-card fade-in">
+                        <div class="image-mask">
+                            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800" alt="髪質改善プログラム" class="concept-img">
+                        </div>
+                        <div class="concept-info text-center">
+                            <div class="concept-icon-wrapper">
+                                <svg class="concept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                            </div>
+                            <h3 class="concept-card-title">髪質改善プログラム</h3>
+                            <span class="concept-card-subtitle">Hair Quality Improvement</span>
+                            <p class="concept-card-text">
+                                特許取得のオーガニックヘアケア成分を使用し、髪の内部から潤いと栄養を補給。くせ毛、広がり、ダメージなどの悩みを解消し、シルクのような自然な艶となめらかな指通りを取り戻します。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="section menu-section" style="background-color: var(--warm-beige);">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-subtitle">MENU & PRICE</span>
+                    <h2 class="section-title">メニュー・料金</h2>
+                </div>
+                <div class="grid grid-2 max-w-5xl mx-auto gap-8">
+                    <!-- Category CUT -->
+                    <div class="menu-box fade-in">
+                        <h3 class="menu-box-title">CUT</h3>
+                        <ul class="menu-list">
+                            <li>
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">カット</span>
+                                    <span class="menu-item-price">¥7,500</span>
+                                </div>
+                                <p class="menu-item-desc">シャンプー・ブロー込み。似合わせカウンセリング付き</p>
+                            </li>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">骨格診断カット</span>
+                                    <span class="menu-item-price">¥9,800</span>
+                                </div>
+                                <p class="menu-item-desc">小顔バランス診断、ミリ単位のオーダーメイドカット</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category COLOR -->
+                    <div class="menu-box fade-in">
+                        <h3 class="menu-box-title">COLOR</h3>
+                        <ul class="menu-list">
+                            <li>
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">フルカラー</span>
+                                    <span class="menu-item-price">¥8,500〜</span>
+                                </div>
+                                <p class="menu-item-desc">髪を傷めない天然オーガニックカラー剤を使用</p>
+                            </li>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">ハイライト・バレイヤージュ</span>
+                                    <span class="menu-item-price">¥12,000〜</span>
+                                </div>
+                                <p class="menu-item-desc">自然な立体感を出し、白髪ぼかしや外国人風カラーにも最適</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category TREATMENT -->
+                    <div class="menu-box fade-in">
+                        <h3 class="menu-box-title">TREATMENT</h3>
+                        <ul class="menu-list">
+                            <li>
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">髪質改善トリートメント</span>
+                                    <span class="menu-item-price">¥6,500</span>
+                                </div>
+                                <p class="menu-item-desc">3ステップの集中内部補修で、髪にコシと潤いを与えます</p>
+                            </li>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">プレミアム髪質改善</span>
+                                    <span class="menu-item-price">¥10,000</span>
+                                </div>
+                                <p class="menu-item-desc">最高級オーガニックトリートメントによる髪のエイジングケア</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category PERM -->
+                    <div class="menu-box fade-in">
+                        <h3 class="menu-box-title">PERM</h3>
+                        <ul class="menu-list">
+                            <li>
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">デジタルパーマ</span>
+                                    <span class="menu-item-price">¥13,000〜</span>
+                                </div>
+                                <p class="menu-item-desc">朝のセットが楽になるコテ巻き風パーマ。カット・ケア込み</p>
+                            </li>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">エアウェーブ</span>
+                                    <span class="menu-item-price">¥14,500〜</span>
+                                </div>
+                                <p class="menu-item-desc">温風で優しく形状記憶させ、ダメージを極限まで抑えたパーマ</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category SPA -->
+                    <div class="menu-box fade-in">
+                        <h3 class="menu-box-title">SPA</h3>
+                        <ul class="menu-list">
+                            <li>
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">ヘッドスパ</span>
+                                    <span class="menu-item-price">¥4,500</span>
+                                </div>
+                                <p class="menu-item-desc">30分。頭皮の汚れをクリアにし、血行を改善します</p>
+                            </li>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">プレミアムスパ</span>
+                                    <span class="menu-item-price">¥7,000</span>
+                                </div>
+                                <p class="menu-item-desc">50分。リンパを流すマッサージと炭酸泉頭皮スパの贅沢コース</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category SET MENU -->
+                    <div class="menu-box fade-in">
+                        <h3 class="menu-box-title">SET MENU</h3>
+                        <ul class="menu-list">
+                            <li>
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">カット + カラー</span>
+                                    <span class="menu-item-price">¥14,500</span>
+                                </div>
+                                <p class="menu-item-desc">【人気No.1】骨格補正カットとフルカラーのフルコース</p>
+                            </li>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span class="menu-item-name">カット + パーマ</span>
+                                    <span class="menu-item-price">¥18,500</span>
+                                </div>
+                                <p class="menu-item-desc">デザインパーマとカットのおすすめセットコース</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section gallery-section">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-subtitle">HAIRSTYLE CATALOG</span>
+                    <h2 class="section-title">スタイルギャラリー</h2>
+                </div>
+
+                <!-- Gallery Filter Buttons -->
+                <div class="gallery-filters fade-in">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Short">Short</button>
+                    <button class="filter-btn" data-filter="Bob">Bob</button>
+                    <button class="filter-btn" data-filter="Medium">Medium</button>
+                    <button class="filter-btn" data-filter="Long">Long</button>
+                    <button class="filter-btn" data-filter="HairQuality">髪質改善</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid fade-in" id="gallery-grid">
+                    <!-- Card 1 -->
+                    <div class="gallery-card" data-tags="Short Natural">
+                        <div class="gallery-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1605497746444-ac9dbd39f4a5?auto=format&fit=crop&q=80&w=600" alt="ナチュラルショート" class="gallery-img">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-tags">
+                                <span>#Short</span>
+                                <span>#Natural</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="gallery-card" data-tags="Bob HairQuality">
+                        <div class="gallery-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1595959183075-c1d409553abe?auto=format&fit=crop&q=80&w=600" alt="艶髪ボブ" class="gallery-img">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-tags">
+                                <span>#Bob</span>
+                                <span>#HairQuality</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="gallery-card" data-tags="Long Color">
+                        <div class="gallery-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=600" alt="ロングヘアオリーブベージュ" class="gallery-img">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-tags">
+                                <span>#Long</span>
+                                <span>#Color</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="gallery-card" data-tags="Medium Perm">
+                        <div class="gallery-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&q=80&w=600" alt="ミディパーマスタイル" class="gallery-img">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-tags">
+                                <span>#Medium</span>
+                                <span>#Perm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="gallery-card" data-tags="Short Color">
+                        <div class="gallery-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae?auto=format&fit=crop&q=80&w=600" alt="ショートバレイヤージュ" class="gallery-img">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-tags">
+                                <span>#Short</span>
+                                <span>#Color</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="gallery-card" data-tags="Bob HairQuality">
+                        <div class="gallery-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1620331350562-74779227d887?auto=format&fit=crop&q=80&w=600" alt="髪質改善ロブ" class="gallery-img">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-tags">
+                                <span>#Bob</span>
+                                <span>#HairQuality</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="gallery-card" data-tags="Long HairQuality">
+                        <div class="gallery-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&q=80&w=600" alt="艶髪ストレートロング" class="gallery-img">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-tags">
+                                <span>#Long</span>
+                                <span>#HairQuality</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="gallery-card" data-tags="Medium Natural">
+                        <div class="gallery-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=600" alt="ナチュラルミディアム" class="gallery-img">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-tags">
+                                <span>#Medium</span>
+                                <span>#Natural</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Staff Section -->
+        <section id="staff" class="section staff-section" style="background-color: var(--warm-beige);">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-subtitle">OUR STYLISTS</span>
+                    <h2 class="section-title">スタイリスト紹介</h2>
+                </div>
+                <div class="grid grid-3 max-w-6xl mx-auto gap-10">
+                    <!-- Staff 1 -->
+                    <div class="staff-card fade-in">
+                        <div class="staff-avatar-wrapper">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" alt="田中 美咲" class="staff-avatar">
+                        </div>
+                        <div class="staff-info">
+                            <h3 class="staff-name">田中 美咲</h3>
+                            <span class="staff-name-en">Misaki Tanaka</span>
+                            <div class="staff-rank-badge">
+                                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <span>Top Stylist</span>
+                            </div>
+                            <p class="staff-exp">サロンワーク歴: 15年</p>
+                            <p class="staff-bio">
+                                骨格診断のスペシャリスト。お客様一人ひとりの頭の形や毛流れを完璧に見極める骨格カットで、朝のセットが5分で決まる洗練スタイルを引き出します。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Staff 2 -->
+                    <div class="staff-card fade-in">
+                        <div class="staff-avatar-wrapper">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400" alt="佐藤 健太" class="staff-avatar">
+                        </div>
+                        <div class="staff-info">
+                            <h3 class="staff-name">佐藤 健太</h3>
+                            <span class="staff-name-en">Kenta Sato</span>
+                            <div class="staff-rank-badge">
+                                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <span>Senior Stylist</span>
+                            </div>
+                            <p class="staff-exp">サロンワーク歴: 12年</p>
+                            <p class="staff-bio">
+                                カラーリングのエキスパート。髪に立体感を与えるハイライトやバレイヤージュ、透明感のあるオリーブカラーが得意。色落ち後も綺麗なカラーリングをデザインします。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Staff 3 -->
+                    <div class="staff-card fade-in">
+                        <div class="staff-avatar-wrapper">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400" alt="鈴木 彩花" class="staff-avatar">
+                        </div>
+                        <div class="staff-info">
+                            <h3 class="staff-name">鈴木 彩花</h3>
+                            <span class="staff-name-en">Ayaka Suzuki</span>
+                            <div class="staff-rank-badge">
+                                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <span>Stylist</span>
+                            </div>
+                            <p class="staff-exp">サロンワーク歴: 8年</p>
+                            <p class="staff-bio">
+                                髪質改善トリートメントおよびスパニスト。ダメージ毛やくせ毛の髪質改善ヘアケアが得意。日常の疲れを癒やす極上のスパ体験とともに、誰もが羨む艶髪へと導きます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop" class="section shop-section">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-subtitle">SALON PRODUCTS</span>
+                    <h2 class="section-title">おすすめ商品</h2>
+                    <p class="section-lead-text">プロが厳選した極上のヘアケア製品を、サロンの仕上がりそのままにご自宅へ</p>
+                </div>
+                <div class="grid grid-2 max-w-5xl mx-auto gap-10">
+                    <!-- Product 1 -->
+                    <div class="product-card fade-in" id="prod-1">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=600" alt="オーガニック ヘアオイル" class="product-img">
+                        </div>
+                        <div class="product-body">
+                            <h3 class="product-title">オーガニック ヘアオイル</h3>
+                            <span class="product-subtitle">Organic Hair Oil</span>
+                            <p class="product-desc">
+                                天然由来成分100%配合。傷んだ髪に浸透し、紫外線や熱ダメージから守る贅沢なオイル。軽いつけ心地でベタつかず、上品なフローラルの香りが一日中持続します。
+                            </p>
+                            <div class="product-rating">
+                                <div class="rating-stars">★★★★★</div>
+                                <span class="rating-count">(128 reviews)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">¥4,800</span>
+                                <button class="btn btn-primary btn-add-to-cart" data-id="prod-1" data-name="オーガニック ヘアオイル" data-price="4800" data-img="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=150">
+                                    <svg class="cart-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                                    購入する
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card fade-in" id="prod-2">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&q=80&w=600" alt="プレミアム シャンプー" class="product-img">
+                        </div>
+                        <div class="product-body">
+                            <h3 class="product-title">プレミアム シャンプー</h3>
+                            <span class="product-subtitle">Premium Shampoo</span>
+                            <p class="product-desc">
+                                サロンクオリティのアミノ酸洗浄成分に特許取得の髪質改善エッセンスをブレンド。きめ細かで濃厚な泡が髪と頭皮を優しく洗い上げ、パサつきのないまとまり髪を叶えます。
+                            </p>
+                            <div class="product-rating">
+                                <div class="rating-stars">★★★★★</div>
+                                <span class="rating-count">(95 reviews)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">¥3,500</span>
+                                <button class="btn btn-primary btn-add-to-cart" data-id="prod-2" data-name="プレミアム シャンプー" data-price="3500" data-img="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&q=80&w=150">
+                                    <svg class="cart-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                                    購入する
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access Section -->
+        <section id="access" class="section access-section" style="background-color: var(--warm-beige);">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-subtitle">ACCESS & INFORMATION</span>
+                    <h2 class="section-title">アクセス・店舗情報</h2>
+                </div>
+                <div class="grid grid-2 max-w-6xl mx-auto gap-12 items-start">
+                    <!-- Access Info -->
+                    <div class="access-info fade-in">
+                        <h3 class="access-salon-title">LUSTER Shinjuku</h3>
+                        <p class="access-salon-sub">光と緑のプライベートサロン</p>
+                        
+                        <dl class="access-details-list">
+                            <div class="access-detail-item">
+                                <dt>ADDRESS</dt>
+                                <dd>
+                                    〒160-0022 東京都新宿区新宿3-1-1 新宿ビル 5F<br>
+                                    <span class="access-landmark">（JR新宿駅 東口より徒歩3分 / 地下鉄新宿三丁目駅 B1出口より徒歩1分）</span>
+                                </dd>
+                            </div>
+                            <div class="access-detail-item">
+                                <dt>PHONE</dt>
+                                <dd class="access-phone">03-1234-5678</dd>
+                            </div>
+                            <div class="access-detail-item">
+                                <dt>OPENING HOURS</dt>
+                                <dd>
+                                    平日: 10:00 - 20:00（カット最終受付 19:00）<br>
+                                    土日祝: 9:00 - 19:00（カット最終受付 18:00）<br>
+                                    <span class="access-holiday">定休日: 毎週火曜日</span>
+                                </dd>
+                            </div>
+                        </dl>
+
+                        <!-- Square Booking Stub Framework -->
+                        <div class="booking-dx-frame">
+                            <h4 class="booking-dx-title">LINE公式アカウント＆WEB予約</h4>
+                            <p class="booking-dx-desc">24時間いつでもリアルタイム空席状況の確認、ご予約、スタイリストの指名が可能です。LINE友だち追加で10%OFFクーポン配布中。</p>
+                            <div class="booking-actions">
+                                <a href="#" id="line-reserve-btn" class="btn btn-accent btn-block">LINEで友だち追加・スマート予約する</a>
+                                <a href="#" id="square-reserve-btn" class="btn btn-outline btn-block">WEB予約システムを開く（Square Appointments）</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Frame -->
+                    <div class="access-map fade-in">
+                        <div class="map-container">
+                            <!-- Real Shinjuku 3-chome Embed -->
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.828014529323!2d139.7013!3d35.6909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cddec302737%3A0x23a3e620573dc0a0!2z5paw5a6_M-S4geebrg!5e0!3m2!1sja!2sjp!4v1716812802000!5m2!1sja!2sjp" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="LUSTER Shinjuku アクセスマップ">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container text-center">
+            <h3 class="footer-logo">LUSTER Shinjuku</h3>
+            <p class="footer-sub">光と緑 of プライベートサロン</p>
+            
+            <ul class="footer-nav">
+                <li><a href="#concept">Concept</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#staff">Staff</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#access">Access</a></li>
+            </ul>
+
+            <div class="footer-policy">
+                <a href="#">プライバシーポリシー</a>
+                <a href="#">利用規約</a>
+            </div>
+
+            <p class="copyright">© 2026 LUSTER Shinjuku. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Slide Drawer -->
+    <div id="cart-drawer-overlay" class="cart-overlay"></div>
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3 class="cart-drawer-title">ショッピングカート</h3>
+            <button id="cart-close-btn" class="cart-close-btn" title="閉じる">✕</button>
+        </div>
+        <div id="cart-items-container" class="cart-body">
+            <!-- Dynamic Cart Items go here -->
+            <div class="cart-empty-message">カートは空です。</div>
+        </div>
+        <div class="cart-footer" id="cart-footer" style="display: none;">
+            <div class="cart-summary-row">
+                <span>小計</span>
+                <span id="cart-subtotal">¥0</span>
+            </div>
+            <div class="cart-summary-row fee-row">
+                <span>配送料</span>
+                <span>無料</span>
+            </div>
+            <div class="cart-summary-row total-row">
+                <span>合計（税込）</span>
+                <span id="cart-total">¥0</span>
+            </div>
+            <button class="btn btn-primary btn-block btn-checkout" id="cart-checkout-btn">
+                レジに進む（デモ決済）
+            </button>
+            <p class="cart-checkout-note">※これはポートフォリオ用のデモ購入画面です。</p>
+        </div>
+    </div>
+
+    <!-- AI Concierge Chatbot UI -->
+    <div id="ai-concierge-trigger" title="AIヘア診断・サロン相談窓口">
+        <span class="ai-trigger-text">AI</span>
+    </div>
+
+    <div id="ai-chat-window" style="display: none;">
+        <div class="ai-chat-header">
+            <div class="ai-chat-title-group">
+                <span class="ai-title-main">LUSTER Shinjuku</span>
+                <span class="ai-title-sub">AI Stylist Concierge</span>
+            </div>
+            <button id="ai-chat-close" title="チャットを閉じる">✕</button>
+        </div>
+        <div id="ai-chat-body">
+            <div class="ai-message ai-message-bot">
+                こんにちは！LUSTER ShinjukuのAIコンシェルジュです。髪に関する悩み（くせ毛、広がり）、似合う髪型のご相談、店舗アクセス、またはおすすめのホームケア製品について何でもお尋ねください。✨
+            </div>
+        </div>
+        <div class="ai-chat-footer">
+            <input type="text" id="ai-chat-input" placeholder="質問を入力してください..." autocomplete="off">
+            <button id="ai-chat-send">送信</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
