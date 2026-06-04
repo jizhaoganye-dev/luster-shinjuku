@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     # Trivyでファイルシステム全体をスキャン（脆弱性＋シークレット漏えい＋設定ミス）
     - name: Run Trivy Vulnerability & Secret Scanner
