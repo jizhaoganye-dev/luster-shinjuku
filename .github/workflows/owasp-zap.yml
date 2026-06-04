@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     # OWASP ZAPベースラインスキャンを公開サイトに対して実行
     - name: Run OWASP ZAP Baseline Security Scan
