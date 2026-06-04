@@ -1,0 +1,3 @@
+# ZAP baseline scan rules file
+# Format: <ruleId> <IGNORE|FAIL|WARN|OUTOFCONTEXT> [comment]
+# 全ルールをデフォルト（WARN）で適用。特定ルールを除外する場合はここに追記。

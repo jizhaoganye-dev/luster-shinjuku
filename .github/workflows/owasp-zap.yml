@@ -1,0 +1,38 @@
+name: "OWASP ZAP Web Security Scan"
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # 毎週日曜 00:00 UTC（09:00 JST）に自動診断
+  workflow_dispatch: # GitHub Actions画面からの手動実行を許可
+
+jobs:
+  zap_scan:
+    name: OWASP ZAP Dynamic Attack Scan
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    # OWASP ZAPベースラインスキャンを公開サイトに対して実行
+    - name: Run OWASP ZAP Baseline Security Scan
+      uses: zaproxy/action-baseline@v0.15.0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        target: 'https://jizhaoganye-dev.github.io/luster-shinjuku/'
+        rules_file_name: '.github/zap/rules.tsv'
+        fail_action: false  # レポート生成を常に保証
+        allow_issue_writing: true  # 脆弱性発見時にGitHub Issueを自動作成
+
+    # ZAPレポートをArtifactとして90日間保存
+    - name: Archive ZAP HTML Scan Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: OWASP-ZAP-Scan-Report
+        path: |
+          report_html.html
+          report_xml.xml
+        retention-days: 90
