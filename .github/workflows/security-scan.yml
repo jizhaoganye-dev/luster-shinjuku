@@ -30,7 +30,7 @@ jobs:
 
     # スキャン結果をArtifactとしてダウンロード可能に
     - name: Upload Security Report
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: Trivy-Security-Report
         path: trivy-report.txt

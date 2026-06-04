@@ -29,7 +29,7 @@ jobs:
 
     # ZAPレポートをArtifactとして90日間保存
     - name: Archive ZAP HTML Scan Report
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: OWASP-ZAP-Scan-Report
         path: |
